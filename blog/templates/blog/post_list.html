@@ -1,13 +1,37 @@
-{% extends 'blog/base.html' %}
+<html>
+    <head>
+        <title>Bloggers</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Bloggers</a></h1>
+        </div>
 
-{% block content %}
-            {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
-                    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaksbr }}</p>
-                </div>
-            {% endfor %}
-{% endblock %}
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href=""> Frank Sonnenberg</a></h2>
+            <p>“Moral character is the DNA of success and happiness.”</p>
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">Eric Edmeades</a></h2>
+            <p>“Success, in life, is most easily measured by the number of days you are truly happy.”</p>
+        </div>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">George Bernard Shaw</a></h2>
+            <p>“Progress is impossible without change, and those who cannot change their minds cannot change anything.”</p>
+        </div>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">Henry David Thoreau</a></h2>
+            <p>“Let go of the past and go for the future. Go confidently in the direction of your dreams. Live the life you imagined.”</p>
+        </div>
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">Dr. William Larkin</a></h2>
+            <p>“NeuroPositivity is what results when you increase the growth and stimulation of neuropathways in the brain that control positivity. We can liken it to a positive state of mind, but it really goes even further. It is a positive state of being.”</p>
+        </div>
+    </body>
+</html>
